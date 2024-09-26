@@ -106,7 +106,7 @@ router.delete("/:id", async (req: Request, res: Response): Promise<void> => {
   } catch (err) {
     res.status(400).json({
       err: true,
-      message: "Failed to delete post",
+      message: "Failed to delete beeper",
       data: null,
     })
   }
@@ -138,7 +138,7 @@ router.get("/:id", async (req: Request, res: Response): Promise<void> => {
   }
 })
 
-// Get beepers by status ep
+// Get beepers by status 
 router.get(
   "/status/:status",
   async (req: Request, res: Response): Promise<void> => {
