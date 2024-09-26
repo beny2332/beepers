@@ -1,5 +1,6 @@
 import exp, { Express } from "express"
 import beeperController from "./controllers/beeperController"
+
 // load enviroment variables
 import "dotenv/config"
 
